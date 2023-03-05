@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <p>天気を表示させるには以下のAPIキーをセットしてください</p>
+        <form action="">
+            <input type="text" placeholder="yahoo api appID" id="yahoo_api_appID">
+            <input type="text" placeholder="Open Weather Map API" id="open_weather_map_api">
+            <button id="key-set">APIキーをセット</button>
+            <button id="key-reset">リセット</button>
+        </form>
+    </section>
+    <section>
+        <p>取引情報を表示させるにはソートを指定し、結果を出力ボタンを押してください</p>
+        <form action="" name="sort">
+            <select name="order" id="">
+                <option value="high-order">取引価格が高い順</option>
+                <option value="low-order">取引価格が低い順</option>
+                <option value="new-order">新しい取引順</option>
+                <option value="old-order">古い取引順</option>
+            </select>
+        </form>
+    </section>
+    <button id="button">結果を出力</button>
+    <div id="result"></div>
+    <script src="app.js"></script>
+</body>
+</html>
